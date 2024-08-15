@@ -29,23 +29,56 @@
 // /*Чему равно значение copyStudent.age после выполнения этого кода?*/
 // 92 good
 
-const student = {
-    name: "Natali"
-}
-console.log(student.name)
-const newStudent = student
-const myFriend = {
-    ...newStudent
-}
-console.log(newStudent)
-console.log(myFriend)
-const newUser = {
-    name: "Daniil"
-}
-console.log(newUser)
-const myFriendName = student.name !== myFriend.name
-    ? newUser.name
-    : student.name
-console.log(myFriendName.name)
+// const student = {
+//     name: "Natali"
+// }
+// console.log(student.name)
+// const newStudent = student
+// const myFriend = {
+//     ...newStudent
+// }
+// console.log(newStudent)
+// console.log(myFriend)
+// const newUser = {
+//     name: "Daniil"
+// }
+// console.log(newUser)
+// const myFriendName = student.name !== myFriend.name
+//     ? newUser.name
+//     : student.name
+// console.log(myFriendName.name)
 // /*Какое значение получит переменная "myFriendName"?*/
 // undefined good
+
+// const humanYearsCatYearsDogYears = (humanYears) => {
+//     let catYears = 0;
+//     let dogYears = 0;
+//
+//     for (let i = 1; i <= humanYears; i = i + 1) {
+//         if (i === 1) {
+//             catYears = catYears + 15;
+//             dogYears = dogYears + 15;
+//         } else if (i === 2) {
+//             catYears = catYears + 9;
+//             dogYears = dogYears + 9;
+//         } else {
+//             catYears = catYears + 4;
+//             dogYears = dogYears + 5;
+//         }
+//     }
+//     return [humanYears, catYears, dogYears];
+// }
+// console.log(humanYearsCatYearsDogYears(8))
+
+// function find(array, element) {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === element) return i;
+//   }
+//   return "Not found";
+// }
+
+const find = (array, element) => array.indexOf(element) < 0 ? "Not found" : array.indexOf(element)
+console.log(find([1, 2, 3, 4, 5, 6], 5))
+
+
+
