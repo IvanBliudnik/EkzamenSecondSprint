@@ -76,9 +76,53 @@
 //   }
 //   return "Not found";
 // }
+// const find = (array, element) => array.indexOf(element) < 0 ? "Not found" : array.indexOf(element)
+// console.log(find([1, 2, 3, 4, 5, 6], 5))
 
-const find = (array, element) => array.indexOf(element) < 0 ? "Not found" : array.indexOf(element)
-console.log(find([1, 2, 3, 4, 5, 6], 5))
 
+//4
+// const name = "Svetlana"
+// const student = {
+//     [name]: name
+// }
+// const number = student["name"]
+//     ? 0.30
+//     : 60.87
+// /*Какое значение получит переменная number?*/
+// console.log(number)
+//60.87 false
 
+// const {community} = {
+//     community: 64
+// }
+// const multiply = community * 70.75
+// const randomValue = multiply && "Natali" && "Maxim"
+/* Какое значение получит переменная randomValue ? */
+// console.log(randomValue)
+// "Maxim" потому что всё true
+
+// const clothes = {
+//     name: "Artur",
+//     scores: 15
+// }
+// const client = {
+//     ...clothes, scores: clothes.scores++
+// }
+// const scores = client.scores
+// Какое значение получит переменная scores?
+// console.log(scores)
+// 15 good
+
+// let result = 0
+// for (let i = 0; i < 5; i++) {
+//     if (i % 2) {
+//         result += i
+//     }
+// }
+// const studentName = (result - 4)
+//     ? "Konstantin"
+//     : "Konstantin"
+/* Какое значение получит переменная studentName? */
+// console.log(studentName)
+// "Konstantin" good
 
